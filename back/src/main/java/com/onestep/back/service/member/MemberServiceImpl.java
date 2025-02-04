@@ -43,7 +43,6 @@ public class MemberServiceImpl implements MemberService {
                 .email(memberDTO.getEmail() != null ? memberDTO.getEmail() : member.getEmail())
                 .phone(memberDTO.getPhone() != null ? memberDTO.getPhone() : member.getPhone())
                 .birth(memberDTO.getBirth() != null ? LocalDate.parse(memberDTO.getBirth()) : member.getBirth())
-                .sex(memberDTO.getSex() != null ? memberDTO.getSex() : member.getSex())
                 .social(member.isSocial())
                 .goals(member.getGoals())
                 .chats(member.getChats())
