@@ -10,6 +10,7 @@ import GoalUpdate from './components/goal/GoalUpdate';
 import ChatPage from './components/chat/ChatPage';
 import ChatRoom from './components/chat/ChatRoom';
 import JoinForm from './components/member/JoinForm';
+import CertBoard from './components/upload/CertBoard';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         <Route path="/chat" element={<ChatPage />}>
           <Route path=":chatId" element={<ChatRoom />} />
         </Route>
+
+        {/* <Route path="/cert" element={<CertBoard />} /> */}
+        <Route path="/cert/:goalid" element={<CertBoard />} />
       </Route>
     </Routes>
 
